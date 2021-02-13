@@ -7,41 +7,72 @@
 #include "Pathfinder.h"
 using namespace std;
 
+Pathfinder::Pathfinder() {
+    for(int lay=0; lay<LAYERS; lay++){
+        for(int row=0; row<ROW_SIZE; row++){
+            for(int col=0; col<COL_SIZE; col++){
+                maze_grid[row][col][lay] = 1;
+            }
+        }
+    }
+}
+
 bool Pathfinder::importMaze(string file_name) {
+    isValidMaze = true;
     cout << "importMaze from "<<file_name<<endl;
-    ifstream file(file_name.c_str());
-    if (file.is_open()) {
-        int count = 0;
-        string line;
+    ifstream tempFile(file_name.c_str());
+    int charCount = 0;
+    int count = 0;
+    if(tempFile.is_open()) {
         string temp;
-        int row_count = 0;
-        for (int lay = 0; lay < LAYERS; lay++) {
-            for (int row = 0; row < ROW_SIZE; row++) {
-                getline(file, line);
-                cout << "Line contents = " << line << endl;
-                stringstream ss(line);
-                for (int col = 0; col < COL_SIZE; col++) {
-                    count++;
-                    int value;
-                    ss >> value;
-                    if(value!=0 && value!=1) {
+        while(getline(tempFile, temp)) {
+            if(count == 0 && temp.at(0)!='1') {
+                isValidMaze = false;
+            }
+            else if (count == 28 && temp.at(temp.length()-1)!='1'){
+                isValidMaze = false;
+            }
+            charCount++;
+            count++;
+            if(temp!="") {
+                for (int i = 0; i < temp.length(); i++) {
+                    if (temp.at(i) != '0' && temp.at(i) != '1' && temp.at(i) != ' '){
+                        cout << temp.at(i);
                         isValidMaze = false;
                     }
-                    cout << "[" << row << "][" << col << "][" << lay << "]=" << value << endl;
-                    maze_grid[row][col][lay] = value;
                 }
             }
-            getline(file, line);
         }
-        if(count!=(LAYERS*ROW_SIZE*COL_SIZE)) {
+        if(charCount!=29) {
             isValidMaze = false;
         }
+        tempFile.close();
+    }
+    ifstream file(file_name.c_str());
+    if (file.is_open()) {
         if(!isValidMaze) {
             return false;
         }
         else {
+            string line;
+            for (int lay = 0; lay < LAYERS; lay++) {
+                for (int row = 0; row < ROW_SIZE; row++) {
+                    getline(file, line);
+                    stringstream ss(line);
+                    for (int col = 0; col < COL_SIZE; col++) {
+                        int value;
+                        ss >> value;
+                        cout << "[" << row << "][" << col << "][" << lay << "]=" << value << endl;
+                        maze_grid[row][col][lay] = value;
+                    }
+                }
+                getline(file, line);
+            }
             return true;
         }
+    }
+    else{
+        return false;
     }
 }
 
@@ -63,10 +94,15 @@ string Pathfinder::toString() const {
         for(int row = 0; row < ROW_SIZE; row++) {
             for(int col = 0; col < COL_SIZE; col++) {
                 ss << maze_grid[row][col][lay];
+                if(col < 4) {
+                    ss << " ";
+                }
             }
             ss << endl;
         }
-        ss << endl;
+        if(lay<4) {
+            ss << endl;
+        }
     }
     return ss.str();
 }

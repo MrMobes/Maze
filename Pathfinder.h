@@ -19,6 +19,7 @@ protected:
     vector<string> solution;
     bool isValidMaze = true;
 public:
+    Pathfinder();
     string toString() const override;
     void createRandomMaze() override;
     bool importMaze(string file_name) override;
