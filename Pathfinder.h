@@ -13,8 +13,8 @@ public:
     bool importMaze(string file_name);
     vector<string> solveMaze();
 protected:
-    const int ROW_SIZE = 5;
-    const int COL_SIZE = 5;
+    static const int ROW_SIZE = 5;
+    static const int COL_SIZE = 5;
     const int BACKGROUND = 1;
     const int WALL = 0;
     const int TEMPORARY = 2; // Used to show this path has been explored
