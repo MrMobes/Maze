@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/jmobe/CLionProjects/CS 235/Labs/Lab3/Pathfinder.cpp">
+			<Option target="Lab3"/>
+		</Unit>
+		<Unit filename="C:/Users/jmobe/CLionProjects/CS 235/Labs/Lab3/Pathfinder.h">
+			<Option target="Lab3"/>
+		</Unit>
 		<Unit filename="C:/Users/jmobe/CLionProjects/CS 235/Labs/Lab3/main.cpp">
 			<Option target="Lab3"/>
 		</Unit>

@@ -3,7 +3,9 @@
 #include <fstream>
 #include <sstream>
 #include <stdexcept>
+#include <vector>
 #include "Pathfinder.h"
+using namespace std;
 
 const int NUM_FILES = 5; // the total number of files to be read from
 

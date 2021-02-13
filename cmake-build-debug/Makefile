@@ -142,6 +142,33 @@ Lab3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3.dir\build.make CMakeFiles/Lab3.dir/build
 .PHONY : Lab3/fast
 
+Pathfinder.obj: Pathfinder.cpp.obj
+
+.PHONY : Pathfinder.obj
+
+# target to build an object file
+Pathfinder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3.dir\build.make CMakeFiles/Lab3.dir/Pathfinder.cpp.obj
+.PHONY : Pathfinder.cpp.obj
+
+Pathfinder.i: Pathfinder.cpp.i
+
+.PHONY : Pathfinder.i
+
+# target to preprocess a source file
+Pathfinder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3.dir\build.make CMakeFiles/Lab3.dir/Pathfinder.cpp.i
+.PHONY : Pathfinder.cpp.i
+
+Pathfinder.s: Pathfinder.cpp.s
+
+.PHONY : Pathfinder.s
+
+# target to generate assembly for a file
+Pathfinder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab3.dir\build.make CMakeFiles/Lab3.dir/Pathfinder.cpp.s
+.PHONY : Pathfinder.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -178,6 +205,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Lab3
+	@echo ... Pathfinder.obj
+	@echo ... Pathfinder.i
+	@echo ... Pathfinder.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
