@@ -32,7 +32,15 @@ int main() {
 	std::ofstream ofs; // create the output stream to write to an output file
 	std::string temp; // used to store the current instruction
 	Pathfinder* pathptr = NULL;//the Pathfinder
-
+/*
+	//test 2d
+	pathptr = new Pathfinder();
+	pathptr->importMaze("Mazes/Invalid1.txt");
+	cout << pathptr->toString();
+	pathptr->solveMaze();
+	exit(0);
+	//end 2dTest
+*/
 	for (int i = 0; i < NUM_FILES; i++) {
 		ifs.open(fileArray[i]); // open the file to read from
 		ofs.open("out_" + fileArray[i]); // open the file to write to
