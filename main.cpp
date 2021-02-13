@@ -35,7 +35,7 @@ int main() {
 /*
 	//test 2d
 	pathptr = new Pathfinder();
-	pathptr->importMaze("Mazes/Invalid1.txt");
+	pathptr->importMaze("Mazes/Solvable1.txt");
 	cout << pathptr->toString();
 	pathptr->solveMaze();
 	exit(0);
