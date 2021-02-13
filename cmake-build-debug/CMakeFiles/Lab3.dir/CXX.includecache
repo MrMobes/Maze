@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mrmobes/CS 235/Maze/Maze/Pathfinder.cpp
+iostream
+-
+sstream
+-
+fstream
+-
+Pathfinder.h
+/home/mrmobes/CS 235/Maze/Maze/Pathfinder.h
+
+/home/mrmobes/CS 235/Maze/Maze/Pathfinder.h
+PathfinderInterface.h
+/home/mrmobes/CS 235/Maze/Maze/PathfinderInterface.h
+
+/home/mrmobes/CS 235/Maze/Maze/PathfinderInterface.h
+iostream
+-
+string
+-
+vector
+-
+
+/home/mrmobes/CS 235/Maze/Maze/main.cpp
+iostream
+-
+fstream
+-
+sstream
+-
+stdexcept
+-
+vector
+-
+Pathfinder.h
+/home/mrmobes/CS 235/Maze/Maze/Pathfinder.h
+
