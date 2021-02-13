@@ -71,14 +71,6 @@ string Pathfinder::toString() const {
     return ss.str();
 }
 
-vector<string> Pathfinder::solveMaze() {
-    find_maze_path(maze_grid, 0,0,0);
-    for(auto s:solution) {
-        cout <<s<<endl;
-    }
-    return solution;
-}
-
 bool Pathfinder::find_maze_path(int grid[ROW_SIZE][COL_SIZE][LAYERS], int r, int c, int l) {
     cout << "find_maze_path ["<<r<<"]["<<c<<"]["<<l<<"]"<<endl;
     cout << this->toString();
@@ -111,4 +103,12 @@ bool Pathfinder::find_maze_path(int grid[ROW_SIZE][COL_SIZE][LAYERS], int r, int
             return false;
         }
     }
+}
+
+vector<string> Pathfinder::solveMaze() {
+    find_maze_path(maze_grid, 0,0,0);
+    for(auto s:solution) {
+        cout <<s<<endl;
+    }
+    return solution;
 }

@@ -13,9 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3d8fa98c-b774-4947-bbc3-0647f6ab4d21" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mazes/2d.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Pathfinder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Pathfinder.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pathfinder.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pathfinder.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
@@ -67,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1613178426892</updated>
-      <workItem from="1613178428811" duration="11153000" />
+      <workItem from="1613178428811" duration="12871000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1613178625608</created>
@@ -97,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613181179245</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implemented all functions&#10;Ready for extensive bug testing">
+      <created>1613199149771</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1613199149771</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +114,7 @@
     <MESSAGE value="Added necessary files" />
     <MESSAGE value="Created Pathfinder.cpp/.h&#10;Defined PathfinderInterface functions" />
     <MESSAGE value="Changed Pathfinder.h ROW/COLUMN ints to static" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed Pathfinder.h ROW/COLUMN ints to static" />
+    <MESSAGE value="Implemented all functions&#10;Ready for extensive bug testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented all functions&#10;Ready for extensive bug testing" />
   </component>
 </project>

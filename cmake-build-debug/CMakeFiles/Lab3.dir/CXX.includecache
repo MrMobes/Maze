@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/mrmobes/CS 235/Maze/Maze/Pathfinder.cpp
+C:/Users/jmobe/CLionProjects/CS 235/Labs/Lab3/Pathfinder.cpp
 iostream
 -
 sstream
@@ -14,31 +14,17 @@ sstream
 fstream
 -
 Pathfinder.h
-/home/mrmobes/CS 235/Maze/Maze/Pathfinder.h
+C:/Users/jmobe/CLionProjects/CS 235/Labs/Lab3/Pathfinder.h
 
-/home/mrmobes/CS 235/Maze/Maze/Pathfinder.h
+C:/Users/jmobe/CLionProjects/CS 235/Labs/Lab3/Pathfinder.h
 PathfinderInterface.h
-/home/mrmobes/CS 235/Maze/Maze/PathfinderInterface.h
+C:/Users/jmobe/CLionProjects/CS 235/Labs/Lab3/PathfinderInterface.h
 
-/home/mrmobes/CS 235/Maze/Maze/PathfinderInterface.h
+C:/Users/jmobe/CLionProjects/CS 235/Labs/Lab3/PathfinderInterface.h
 iostream
 -
 string
 -
 vector
 -
-
-/home/mrmobes/CS 235/Maze/Maze/main.cpp
-iostream
--
-fstream
--
-sstream
--
-stdexcept
--
-vector
--
-Pathfinder.h
-/home/mrmobes/CS 235/Maze/Maze/Pathfinder.h
 
